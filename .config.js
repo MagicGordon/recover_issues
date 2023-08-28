@@ -108,12 +108,15 @@ module.exports = {
   },
   mainnet: {
     // library settings
-    ethClientAddress: '0x3be7Df8dB39996a837041bb8Ee0dAdf60F767038',
+    // ethClientAddress: '0x3be7Df8dB39996a837041bb8Ee0dAdf60F767038',  // 
+    ethClientAddress: '0x3FEFc5A4B1c02f21cBc8D3613643ba0635b9a873',
     ethNearOnEthClientAbiText: readFileSync('./abi/nearOnEthClient.abi'),
     ethErc20AbiText: readFileSync('./abi/erc20.abi'),
     ethLockerAbiText: readFileSync('./abi/ERC20Locker.full.abi'),
     ethLockerAddress: '0x23ddd3e3692d1861ed57ede224608875809e127f',
-    nearClientAccount: 'client.bridge.near',
+    // nearClientAccount: 'client.bridge.near', // eth-light-client on near
+    nearClientAccount: 'client-eth2.bridge.near',
+
     nearHelperUrl: 'https://helper.near.org',
     nearTokenFactoryAccount: 'factory.bridge.near',
     eNEARAbiText: readFileSync('./abi/eNEAR.abi'),
